@@ -20,6 +20,7 @@ RUN apt-get install -y git
 RUN apt-get install -y nano
 RUN apt-get install -y tigervnc-standalone-server
 RUN npm install -g heroku
+RUN npm i @cloudflare/wrangler -g
 COPY root.sh /usr/local/bin/root.sh
 COPY .bashrc $HOME/.bashrc
 RUN apt-get install -y wget 
